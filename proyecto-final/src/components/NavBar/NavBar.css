@@ -1,0 +1,19 @@
+
+
+.img{
+    width: 15%;
+    margin-right: 10%   ;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    background-color:#f9d2dad4;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navBar a{
+    padding: 10px;
+    font-family:georama;
+    text-decoration: none;
+    color: #5E3E22;
+}
