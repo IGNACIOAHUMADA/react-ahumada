@@ -6,6 +6,7 @@ import logo from'./imagen-logo/loguito.svg'
 
 function NavBar(props) {
     return (
+        <nav className='navbar navbar-light' >
         <div>
             <ul className="nav">
                 <img className='img' src={logo} alt="logo de la empresa " />
@@ -18,6 +19,7 @@ function NavBar(props) {
                 <CartWidget />
             
         </div>
+        </nav>
     );
 }
 

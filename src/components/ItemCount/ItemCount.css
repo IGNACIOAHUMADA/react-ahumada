@@ -1,0 +1,41 @@
+.containerBoton{
+    background-color: whitesmoke;
+    padding: 18px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 15);
+    -moz-box-shadow:0px 0px 5px 0px rgba(0, 0, 0, 15);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 15);
+}
+.containerBoton div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+.containerBoton button{
+    width: 100%;    
+    padding: 15px;
+    margin: 5px 0px;
+    font-size: 0,75rem;
+}
+.btn-secondary {
+    color: black;
+    background-color: whitesmoke;
+    border-color: black ;
+    border: none;
+}
+.boton {
+    background-color: whitesmoke;
+    border: none;
+}
+.botonAgregar{ 
+    border: solid;
+    border-color: black;
+    color: black;
+    border-radius: 50px  ;
+    display: flex;
+}
+.containerBoton div button:hover{
+    color: #5E3E22;
+    border-color: #5E3E22;
+}

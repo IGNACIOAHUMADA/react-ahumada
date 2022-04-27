@@ -1,9 +1,15 @@
 import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 import './item-list.css'
 
-const ItemListContainer = ({greeting}) => {
-  return (
-    <div className='container'>{greeting}</div>
+function ItemListContainer ({greeting}){
+  function carrito(){
+    console.log('AGREGADO AL CARRITO ')
+  }
+  return(
+    <div className='containerBoton'>
+      <ItemCount initail={0} stock= {10} onAdd={carrito}/>
+    </div>
   )
 }
 
