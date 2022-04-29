@@ -1,26 +1,26 @@
-import React from 'react';
-import CartWidget from '../CartWidget';
-import './NavBar.css';
-import logo from'./imagen-logo/loguito.svg'
+import { Navbar, Container , Nav, NavDropdown  } from "react-bootstrap"
+import CartWidet from  '../CartWidget/index'
 
-
-function NavBar(props) {
-    return (
-        <nav className='navbar navbar-light' >
-        <div>
-            <ul className="nav">
-                <img className='img' src={logo} alt="logo de la empresa " />
-                <a href="#">Home</a>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Nuestros prodcutos</a>
-                <a href="#">Sucursales</a>
-                <a href="#">Contacto</a>
-            </ul>
-                <CartWidget />
-            
-        </div>
-        </nav>
-    );
+const NavBar = () =>{
+    return(
+<Navbar bg="light" expand="lg">
+  <Container>
+    <Navbar.Brand href="#home">A punto caramelo </Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Inicio</Nav.Link>
+        <Nav.Link href="#link">Catalogo</Nav.Link>
+        <NavDropdown title="Sobre Nosotros" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Nuestra historia</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Contacto</NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+  <CartWidet/>
+</Navbar>
+)
 }
 
 export default NavBar;

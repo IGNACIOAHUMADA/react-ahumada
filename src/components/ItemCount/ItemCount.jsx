@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './ItemCount.css'
+import { Button } from 'react-bootstrap';
 
 function ItemCount({stock, initail, onAdd}) {
     const [count, setCount] = useState(initail);
@@ -19,12 +20,11 @@ function ItemCount({stock, initail, onAdd}) {
     return(
         <div className="container-fluid ">
             <div>
-                <button class="btn btn-secondary btn-sm" onClick={()=> sumarBoton()}>+</button>
+                <Button variant="dark" onClick={()=> sumarBoton()}>+</Button>
                 <input className="d-inline-flex p-2 bd-highlight" readOnly value={count} />
-                <button class="btn btn-secondary btn-sm" onClick={()=> restarBoton()}>-</button>
+                <Button variant="dark" onClick={()=> restarBoton()}>-</Button>
             </div>
-            <button className="botonAgregar btn-sm flex-row" onClick={()=>(count <= stock) && onAdd()} >Agregar al carrito</button>
-
+            <Button variant="dark" onClick={()=>(count <= stock) && onAdd()} >Agregar al carrito</Button>
         </div> 
 
     )
