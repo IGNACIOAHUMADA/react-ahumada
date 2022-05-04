@@ -1,0 +1,10 @@
+*{
+    color: black;
+}
+.cartas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 15px;
+    width: 30%;
+}
